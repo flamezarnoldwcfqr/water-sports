@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Goa water sports</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+	<meta content="Your journey, our commitment. We are dedicated to providing you with the tools, inspiration, and support you need to succeed. From innovative solutions to premium experiences, we’re here to help you thrive, grow, and achieve greatness in every aspect of your life." name="description"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<body>
+	<header class="global-header-section gradient-background" id="main-header">
+		<div class="header-container container-fluid">
+			<div class="logo-section">
+				<a class="brand-logo neon-text" href="index.html">Goa water sports</a>
+			</div>
+			<nav class="main-navigation">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#as">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<section class="hotel-content-block">
+		<div class="hotel-content-wrapper">
+			<div class="hotel-image-section">
+				<img alt="Luxury Hotel" class="hotel-content-image" loading="lazy" src="img/blog-hotel2.jpg"/>
+			</div>
+			<div class="hotel-text-section">
+				<h1 class="hotel-content-title">Top 10 Travel Destinations You Must Visit</h1>
+				<div class="hotel-content-description">
+					<p>Uncover the hidden gems and popular landmarks in these top 10 travel destinations. Plan your next vacation with our comprehensive travel tips.</p>
+					<p>Experience the thrill of water sports in Goa, one of the hottest tourist destinations. Enjoy an unforgettable adventure with scuba diving, water skiing, and parasailing.</p>
+					<p>Goa welcomes tourists with its long stretches of scenic beaches, magnificent architecture, and rich cultural history. It's a haven for those seeking tranquility.</p>
+					<p>While in Goa, don't forget to explore its historical sites, unique local cuisine, and traditional markets. The state's rich culture will surely captivate your senses.</p>
+					<p>Relish the serene beauty of Goa's untouched beaches. Frolic in the warm waters, lie on the golden sand, or marvel at the stunning sunsets.</p>
+					<p>For those with an adventurous spirit, try out water sports in Goa. It's an experience that combines thrill, fun, and an insatiable taste of the ocean.</p>
+					<p>Discover the joy of water sports in Goa. Ride the water on a jet ski, float in the air on a parasailing adventure, or explore the depths with scuba diving.</p>
+					<p>Unravel the magic that Goa holds within its waters. Make unforgettable memories while cruising on a yacht or enjoying a thrilling fishing experience.</p>
+					<p>Goa, known for its vibrant nightlife, offers a myriad of options to unwind. From beach parties to silent discos, there is something to suit everyone's style.</p>
+					<p>Goa, synonymous with tourism and travel, ensures an unparalleled holiday experience. Its blend of natural beauty, heritage, and contemporary lifestyle will leave you longing for more.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="privacy-notification" id="privacyModal">
+		<div class="privacy-notification__content">
+			<h2 class="privacy-notification__title">Privacy Policy</h2>
+			<p class="privacy-notification__text">We respect your privacy and are committed to protecting your personal information. Our privacy policy outlines the types of data we collect and how we use it to improve your experience.<a class="privacy-notification__link" href="privacy_policy.html">View Privacy Policy</a>
+			</p>
+			<div class="privacy-notification__actions">
+				<button class="privacy-notification__button privacy-notification__button--accept">Accept</button>
+				<button class="privacy-notification__button privacy-notification__button--decline">Decline</button>
+			</div>
+		</div>
+	</div>
+	<footer class="custom-footer custom-footer-style">
+		<div class="footer-wrapper">
+			<nav class="footer-navigation">
+				<ul class="footer-menu custom-footer-menu">
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#as">About Us</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="footer-item menu-hover">
+						
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="blog.html">Blog</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="privacy_policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-credits">
+				<p class="footer-text custom-footer-text">© 2025 Goa water sports</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		setTimeout(() => {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.add('privacy-notification--visible');
+		}, );
+
+		function closeModal() {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.remove('privacy-notification--visible');
+		}
+
+		document.querySelector('.privacy-notification__button--accept').addEventListener('click', closeModal);
+		document.querySelector('.privacy-notification__button--decline').addEventListener('click', closeModal);
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+				const languageSection = document.getElementById("languageButton");
+				const languageDropdown = document.getElementById("languageDropdown");
+		
+				languageSection.addEventListener("mouseenter", function () {
+						languageDropdown.classList.add("visible");
+				});
+		
+				document.addEventListener("click", function (event) {
+						if (!languageSection.contains(event.target) && !languageDropdown.contains(event.target)) {
+								languageDropdown.classList.remove("visible");
+						}
+				});
+		});
+			</script>
+
+
+</body></html>

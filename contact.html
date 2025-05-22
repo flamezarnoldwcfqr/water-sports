@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Goa water sports</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+	<meta content="Your journey, our commitment. We are dedicated to providing you with the tools, inspiration, and support you need to succeed. From innovative solutions to premium experiences, we’re here to help you thrive, grow, and achieve greatness in every aspect of your life." name="description"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<body>
+	<header class="global-header-section gradient-background" id="main-header">
+		<div class="header-container container-fluid">
+			<div class="logo-section">
+				<a class="brand-logo neon-text" href="index.html">Goa water sports</a>
+			</div>
+			<nav class="main-navigation">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#as">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<section class="hotel-contact-section gradient-background padding-large" id="contact-us">
+		<div class="hotel-contact-container container-flex">
+			<h2 class="hero-subtitle">Contact Us</h2>
+			<div class="hotel-contact-content">
+				<form class="hotel-contact-form">
+					<div class="hotel-form-group">
+						<label class="hotel-form-label" for="user-name">Your Name</label>
+						<input class="hotel-form-input" id="user-name" placeholder="" required="" type="text"/>
+					</div>
+					<div class="hotel-form-group">
+						<label class="hotel-form-label" for="user-email">Email Address</label>
+						<input class="hotel-form-input" id="user-email" placeholder="" required="" type="email"/>
+					</div>
+					<div class="hotel-form-group">
+						<label class="hotel-form-label" for="user-message">Your Message</label>
+						<textarea class="hotel-form-textarea" id="user-message" placeholder="" required=""></textarea>
+					</div>
+					<button class="hotel-form-button" type="submit">Send Message</button>
+				</form>
+				<div class="hotel-contact-info">
+					<h3 class="hotel-info-title">Contact Information</h3>
+					<ul class="hotel-info-list">
+						<li class="hotel-info-item">
+							<strong>Address:</strong>9 Houston Street, Houston</li>
+						<li class="hotel-info-item">
+							<strong>Phone:</strong>+1 555-0113</li>
+						<li class="hotel-info-item">
+							<strong>Email:</strong>contact@codebase.net</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="privacy-notification" id="privacyModal">
+		<div class="privacy-notification__content">
+			<h2 class="privacy-notification__title">Privacy Policy</h2>
+			<p class="privacy-notification__text">We respect your privacy and are committed to protecting your personal information. Our privacy policy outlines the types of data we collect and how we use it to improve your experience.<a class="privacy-notification__link" href="privacy_policy.html">View Privacy Policy</a>
+			</p>
+			<div class="privacy-notification__actions">
+				<button class="privacy-notification__button privacy-notification__button--accept">Accept</button>
+				<button class="privacy-notification__button privacy-notification__button--decline">Decline</button>
+			</div>
+		</div>
+	</div>
+	<footer class="custom-footer custom-footer-style">
+		<div class="footer-wrapper">
+			<nav class="footer-navigation">
+				<ul class="footer-menu custom-footer-menu">
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#as">About Us</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="footer-item menu-hover">
+						
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="blog.html">Blog</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="privacy_policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-credits">
+				<p class="footer-text custom-footer-text">© 2025 Goa water sports</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		setTimeout(() => {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.add('privacy-notification--visible');
+		}, );
+	
+		function closeModal() {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.remove('privacy-notification--visible');
+		}
+	
+		document.querySelector('.privacy-notification__button--accept').addEventListener('click', closeModal);
+		document.querySelector('.privacy-notification__button--decline').addEventListener('click', closeModal);
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+				const languageSection = document.getElementById("languageButton");
+				const languageDropdown = document.getElementById("languageDropdown");
+		
+				languageSection.addEventListener("mouseenter", function () {
+						languageDropdown.classList.add("visible");
+				});
+		
+				document.addEventListener("click", function (event) {
+						if (!languageSection.contains(event.target) && !languageDropdown.contains(event.target)) {
+								languageDropdown.classList.remove("visible");
+						}
+				});
+		});
+			</script>
+
+
+</body></html>

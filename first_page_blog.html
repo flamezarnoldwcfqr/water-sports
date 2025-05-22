@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Goa water sports</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+	<meta content="Your journey, our commitment. We are dedicated to providing you with the tools, inspiration, and support you need to succeed. From innovative solutions to premium experiences, we’re here to help you thrive, grow, and achieve greatness in every aspect of your life." name="description"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<body>
+	<header class="global-header-section gradient-background" id="main-header">
+		<div class="header-container container-fluid">
+			<div class="logo-section">
+				<a class="brand-logo neon-text" href="index.html">Goa water sports</a>
+			</div>
+			<nav class="main-navigation">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#as">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<section class="hotel-content-block">
+		<div class="hotel-content-wrapper">
+			<div class="hotel-image-section">
+				<img alt="Luxury Hotel" class="hotel-content-image" loading="lazy" src="img/blog-hotel1.jpg"/>
+			</div>
+			<div class="hotel-text-section">
+				<h1 class="hotel-content-title">Welcome to the Exciting World of Tourism</h1>
+				<div class="hotel-content-description">
+					<p>Embark on a journey to explore different cultures, cuisines, and landscapes. Let us inspire you to travel and experience the beauty of the world.</p>
+					<p>Goa, the pearl of the east, offers majestic view of the azure sea. Ideal for water sports, the pristine beaches are a sight to behold.</p>
+					<p>Goa, with its vivid cultural mosaic and rich history, mesmerizes tourists from all over the world. Did you know water sports in Goa is top-rated?</p>
+					<p>Experience the thrill of water sports in Goa's crystal clear waters. From wakeboarding to windsurfing, there is an adventure waiting for everyone.</p>
+					<p>Witness the burst of orange and purple colors as the sun dips into the horizon in Goa. Don't miss the exhilarating water sports.</p>
+					<p>Traveling to Goa is like stepping into a paradise filled with lush greenery, white sandy beaches, and plenty of water sports activities.</p>
+					<p>Goa is a picturesque destination, featuring diverse elements from the Portuguese era. The water sports in Goa are a highlight of the tourism industry.</p>
+					<p>Embark on a journey into the tropical paradise of Goa where the sea kisses the sandy beaches and water sports are always thrilling.</p>
+					<p>If you are an adrenaline junkie, Goa’s water sports are not to be missed. Discover diving, parasailing, jet skiing and many more exciting adventures.</p>
+					<p>Golden beaches, the sparkling sea, the bustling markets, and exotic water sports are some of the attractions that make Goa a top tourist spot.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="privacy-notification" id="privacyModal">
+		<div class="privacy-notification__content">
+			<h2 class="privacy-notification__title">Privacy Policy</h2>
+			<p class="privacy-notification__text">We respect your privacy and are committed to protecting your personal information. Our privacy policy outlines the types of data we collect and how we use it to improve your experience.<a class="privacy-notification__link" href="privacy_policy.html">View Privacy Policy</a>
+			</p>
+			<div class="privacy-notification__actions">
+				<button class="privacy-notification__button privacy-notification__button--accept">Accept</button>
+				<button class="privacy-notification__button privacy-notification__button--decline">Decline</button>
+			</div>
+		</div>
+	</div>
+	<footer class="custom-footer custom-footer-style">
+		<div class="footer-wrapper">
+			<nav class="footer-navigation">
+				<ul class="footer-menu custom-footer-menu">
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#as">About Us</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="footer-item menu-hover">
+						
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="blog.html">Blog</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="privacy_policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-credits">
+				<p class="footer-text custom-footer-text">© 2025 Goa water sports</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		setTimeout(() => {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.add('privacy-notification--visible');
+		}, );
+
+		function closeModal() {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.remove('privacy-notification--visible');
+		}
+
+		document.querySelector('.privacy-notification__button--accept').addEventListener('click', closeModal);
+		document.querySelector('.privacy-notification__button--decline').addEventListener('click', closeModal);
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+				const languageSection = document.getElementById("languageButton");
+				const languageDropdown = document.getElementById("languageDropdown");
+		
+				languageSection.addEventListener("mouseenter", function () {
+						languageDropdown.classList.add("visible");
+				});
+		
+				document.addEventListener("click", function (event) {
+						if (!languageSection.contains(event.target) && !languageDropdown.contains(event.target)) {
+								languageDropdown.classList.remove("visible");
+						}
+				});
+		});
+			</script>
+
+
+</body></html>
